@@ -34,7 +34,7 @@ class ViewController: UIViewController , GIDSignInDelegate{
              // Do any additional setup after loading the view.
         GoogleButton()
         configurelocationmanager()
-        
+        print("HEY YOU ARE HERE ")
     }
     
     func configurelocationmanager(){
@@ -51,18 +51,6 @@ class ViewController: UIViewController , GIDSignInDelegate{
     
     func GoogleButton() {
          
-         
-//        googlesigninbtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-//        googlesigninbtn.titleLabel?.textColor = UIColor.black
-//        googlesigninbtn.layer.borderColor = UIColor.black.cgColor
-//        googlesigninbtn.layer.borderWidth = 1
-//        googlesigninbtn.backgroundColor = UIColor.black
-//         googlesigninbtn.clipsToBounds = true
-//         
-//         googlesigninbtn.setImage(UIImage(named: "google") , for: UIControl.State.normal)
-//         googlesigninbtn.imageView?.contentMode = .scaleAspectFit
-//         googlesigninbtn.tintColor = .white
-//         googlesigninbtn.imageEdgeInsets = UIEdgeInsets(top: 12, left: -35, bottom: 12, right: 0)
          
          GIDSignIn.sharedInstance()?.delegate = self
           GIDSignIn.sharedInstance()?.presentingViewController = self
