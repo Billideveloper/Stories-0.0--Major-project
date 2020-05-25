@@ -1,0 +1,6 @@
+framework module Pods_Stories_0_0_Stories_0_0UITests {
+  umbrella header "Pods-Stories 0.0-Stories 0.0UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
