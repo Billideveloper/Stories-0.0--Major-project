@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationUsageDescription</key>
+	<string>we are using your location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>we are using using your location everytime</string>
+	<key>NSCameraUsageDescription</key>
+	<string>do u allow to use your camera for this app?</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>do u allow this app to use your media files?</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>will u allow your app to always use your location?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Do u allow this app to know your current location?</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -16,10 +28,37 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.1076301227019-a6necm5h6fijchgpjggkaian3eh9d3ur</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>Ravi-thakur.Stories-0-0</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Austine Demo.ttf</string>
+		<string>Cellest (demo).ttf</string>
+		<string>Love Story Rough.ttf</string>
+		<string>Serenity Script.otf</string>
+		<string>Marlina.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

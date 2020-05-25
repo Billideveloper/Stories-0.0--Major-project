@@ -8,17 +8,49 @@
 
 import UIKit
 import CoreData
+import GoogleSignIn
+import FirebaseAuth
+import IQKeyboardManagerSwift
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+     static var isToken: String? = nil
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+    
+                // Override point for customization after application launch.
+        
+        FirebaseApp.configure()
+        
+               
+        IQKeyboardManager.shared.enable = true
+            
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        
+      //   GIDSignIn.sharedInstance()?.clientID = FirebaseApp.app()?.options.clientID
+        
+       
+        
         return true
     }
+    
+    
+    
+     func application(_ application: UIApplication,
+                        open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+         return GIDSignIn.sharedInstance().handle(url)
+       }
+    
+        
 
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
